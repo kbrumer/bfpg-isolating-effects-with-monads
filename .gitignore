@@ -1,0 +1,15 @@
+.idea
+*.iml
+.auto-saves*
+.ensime*
+target/*
+project/target
+project/project
+.#*
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+auto/
