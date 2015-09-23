@@ -2,6 +2,4 @@ A quick talk wrangled together for chatting through the reader, writer and state
 
 This talk was written for the Brisbane Functional Programming Group 2013-04-23.
 
-Best to run these examples in sbt.
-
-Run sbt console and go Start.main( "test.xml" ) to run the first version.
+These examples are runnable from IntelliJ. Build using maven.
