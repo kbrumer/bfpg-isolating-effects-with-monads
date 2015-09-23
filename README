@@ -1,5 +1,30 @@
+This code is an indirect fork of code from here:
+
+https://github.com/bfpg/bfpg-isolating-effects-with-monads
+
+All credit towards the approach and code go to the original author.
+
+
+From the original README:
+
+>>
+
 A quick talk wrangled together for chatting through the reader, writer and state monads and how they are useful to move from imperative code to functional looking code.
 
 This talk was written for the Brisbane Functional Programming Group 2013-04-23.
 
-These examples are runnable from IntelliJ. Build using maven.
+>>
+
+Also, I added the RWS example from here:
+
+http://stackoverflow.com/questions/11619433/reader-writer-state-monad-how-to-run-this-scala-code
+
+and gist from here:
+
+https://gist.github.com/tonymorris/2360532
+
+
+I updated the build to use maven and added App's so that the examples are easily runnable from within Intellij.
+
+
+
