@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * In our quest to remove the global config, lets change indented to be curried
  * so that we can pre fill in the indentSeq and have that return a function
@@ -11,9 +13,9 @@
  * cumbersome.
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.mutable
+import scala.io.Source
+import scala.xml.pull._
 
 object CurriedDI {
 

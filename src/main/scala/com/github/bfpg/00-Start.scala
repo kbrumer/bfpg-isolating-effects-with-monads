@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * Our first imperative attempt at writing a solution. Our problem is as such:
  * - We need to read in an XML file and pretty print it with a configurable
@@ -23,9 +25,9 @@
  * make code brittle and difficult to test.
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.mutable
+import scala.io.Source
+import scala.xml.pull._
 
 object Start {
 

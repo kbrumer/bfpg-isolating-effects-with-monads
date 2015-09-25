@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * Removing the mutable stack is something that is different and a bit trickier
  * to deal with compared to the read-only / write-only issues that we cleaned up
@@ -12,15 +14,13 @@
  * regardless of whether we're changing the stack or not
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.immutable.Stack
+import scala.io.Source
+import scala.xml.pull._
 import scalaz._
-import std.list._
-import syntax.traverse._
-import syntax.comonad._
-import syntax.monad._
-import syntax.writer._
+import scalaz.std.list._
+import scalaz.syntax.monad._
+import scalaz.syntax.writer._
 
 object ReaderWriterCollectingState {
 

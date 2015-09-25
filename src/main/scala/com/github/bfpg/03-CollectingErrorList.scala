@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * We can get rid of the mutable error global by making each event map to a
  * tuple that holds list of errors and the resulting pretty printed line. That
@@ -19,13 +21,11 @@
  * see this in the next step!
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.mutable
+import scala.io.Source
+import scala.xml.pull._
 import scalaz._
-import std.list._
-import syntax.traverse._
-import syntax.monad._
+import scalaz.syntax.monad._
 
 object CollectingErrorList {
 

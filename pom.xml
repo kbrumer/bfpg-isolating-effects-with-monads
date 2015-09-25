@@ -74,5 +74,16 @@
             <artifactId>scalaz-core_2.10</artifactId>
             <version>7.0.6</version>
         </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.7.15-M1</version>
+        </dependency>
+
     </dependencies>
 </project>

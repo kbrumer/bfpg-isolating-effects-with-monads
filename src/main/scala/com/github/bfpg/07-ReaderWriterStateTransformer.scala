@@ -1,16 +1,16 @@
+package com.github.bfpg
+
 /*
  *
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.immutable.Stack
+import scala.io.Source
+import scala.xml.pull._
 import scalaz._
-import std.list._
-import syntax.traverse._
-import syntax.comonad._
-import syntax.monad._
-import syntax.writer._
+import scalaz.std.list._
+import scalaz.syntax.monad._
+import scalaz.syntax.writer._
 
 object ReaderWriterStateTransformer {
 

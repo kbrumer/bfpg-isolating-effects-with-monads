@@ -1,5 +1,7 @@
-import scalaz._
+package net.tmorris
+
 import scalaz.Scalaz._
+import scalaz._
 
 object RWSExample extends App {
   case class Config(port: Int)

@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * Here we hide that currying up in the reader monad, where instead of currying
  * we return a Reader[String,String] that will return a indented string once we
@@ -14,12 +16,13 @@
  * that first.
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.mutable
+import scala.io.Source
+import scala.xml.pull._
 import scalaz._
-import std.list._
-import syntax.traverse._
+// intellij complains it's unused. It is most certainly used.
+import scalaz.std.list._
+import scalaz.syntax.traverse._
 
 object ReaderMonad {
 
@@ -37,9 +40,7 @@ object ReaderMonad {
 
   def verifyNewElement( event: XMLEvent ) = {
     (foundElems.headOption,event) match {
-      case (Some("msg"),EvElemStart( _ , l , _ , _ )) => errors += (
-        s"WARN: Msg should only contain text, contains: <$l>"
-      )
+      case (Some("msg"),EvElemStart( _ , l , _ , _ )) => errors += s"WARN: Msg should only contain text, contains: <$l>"
       case _ => ()
     }
   }

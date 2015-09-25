@@ -1,3 +1,5 @@
+package com.github.bfpg
+
 /*
  * Here we introduce the writer monad and change our verifyNewElement function
  * to return a Writer[List[String],Unit] monad instead. The writer monad, will
@@ -19,14 +21,13 @@
  * that is flat and sequential, so we shouldn't have to deal with these layers.
  */
 
-import scala.xml.pull._
-import scala.io.Source
 import scala.collection.mutable
+import scala.io.Source
+import scala.xml.pull._
 import scalaz._
-import std.list._
-import syntax.traverse._
-import syntax.monad._
-import syntax.writer._
+import scalaz.std.list._
+import scalaz.syntax.monad._
+import scalaz.syntax.writer._
 
 object WriterMonad {
 
